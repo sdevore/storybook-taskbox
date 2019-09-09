@@ -7,12 +7,15 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
+    "test:unit -u": "vue-cli-service test:unit -- -u",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "CHROMATIC_APP_CODE=76ex9ych2s chromatic test"
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -38,6 +41,7 @@
     "eslint-plugin-vue": "^5.0.0",
     "jest-vue-preprocessor": "^1.5.0",
     "prettier": "^1.18.2",
+    "storybook-chromatic": "^2.2.2",
     "vue-template-compiler": "^2.6.10"
   }
 }
